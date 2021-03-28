@@ -1,0 +1,15 @@
+*.ipynb
+*.pyc
+__pycache__
+tags
+*.swp
+*.egg-info
+
+# Blacklists all csv files in analysis
+**/*.csv
+**/*bak
+
+# Whitelist only cherry-picked csv files
+!/data/public_merged.csv
+!/data/public_data.csv
+!/csv/*

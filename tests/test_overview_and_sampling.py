@@ -1,5 +1,6 @@
 import os
 import sys
+import pytest
 from pathlib import Path
 
 def sha256sum(fn: Path) -> str:
@@ -11,6 +12,7 @@ def sha256sum(fn: Path) -> str:
 HASH = "{{hash}}"
 CACHED_DATA = Path("cache/processed_data.csv")
 
+@pytest.mark.skip()  # uncomment this to actually run the test
 def test_overview_and_sampling():
     sys.path.insert(1, str(Path(__file__).parent.parent))
     import survey.overview_and_sampling

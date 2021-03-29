@@ -8,7 +8,7 @@ url: "https://softwaresaved.github.io"
 theme: just-the-docs
 search_enabled: true
 color_scheme: survey
-exclude: ["*.py"]
+exclude: ["*.py", "vendor"]
 
 collections:
   section:

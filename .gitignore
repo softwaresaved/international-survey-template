@@ -1,3 +1,4 @@
+vendor
 *.ipynb
 *.pyc
 __pycache__
